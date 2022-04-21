@@ -1,5 +1,7 @@
 package com.example.lab1peliculas.ui.slideshow
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -45,7 +47,8 @@ class SlideshowFragment : Fragment() {
             lvMovies.adapter = MovieAdapter(requireContext(), datos)
             lvMovies.setOnItemClickListener{ adapterView, view, i, l ->
                 val movieSelect = adapterView.adapter.getItem(i) as Movie
-
+                var uri = Uri.parse(movieSelect.description)
+                startActivity(Intent(Intent.ACTION_VIEW, uri))
 
 
             }

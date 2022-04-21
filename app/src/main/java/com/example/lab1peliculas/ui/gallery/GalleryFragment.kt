@@ -8,6 +8,8 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.Navigation
+import com.example.lab1peliculas.R
 import com.example.lab1peliculas.databinding.FragmentGalleryBinding
 
 class GalleryFragment : Fragment() {
@@ -55,7 +57,17 @@ class GalleryFragment : Fragment() {
                 ).show()
             }
             else{
-                
+                if(binding.tietCorreo.text.toString().equals("") && binding.tietNombre.text.toString().equals("")){
+                    Toast.makeText(
+                        requireContext(),
+                        "la contraseña tiene que ser de almenos 6 caracteres y un numero",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+                else{
+                    Navigation.findNavController(view).navigate(R.id.action_nav_gallery_to_nav_slideshow)
+                }
+
             }
 
         }
