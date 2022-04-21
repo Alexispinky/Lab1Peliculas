@@ -1,0 +1,29 @@
+package com.example.lab1peliculas.data
+
+import android.content.res.Resources
+
+
+fun movieList(): ArrayList<Movie>{
+    return arrayListOf(
+        Movie(id=1,title="Smiles of a Summer Night (Sommarnattens leende)",genero="Comedy|Romance",description="Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit."),
+        Movie(id=2,title="Grumpier Old Men",genero="Comedy|Romance",description="Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio."),
+        Movie(id=3,title="Blind Massage (Tui na)",genero="Drama",description="Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.\n\nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero."),
+        Movie(id=4,title="The Tree, the Mayor and the Mediatheque",genero="Comedy",description="Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi."),
+        Movie(id=5,title="Shadow Kill",genero="Drama",description="Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat."),
+        Movie(id=6,title="Borderland",genero="Crime|Horror|Thriller",description="Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl."),
+        Movie(id=7,title="Ten Little Indians",genero="Crime|Mystery",description="Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum."),
+        Movie(id=8,title="Computer Chess",genero="Comedy",description="Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus."),
+        Movie(id=9,title="I Still Know What You Did Last Summer",genero="Horror|Mystery|Thriller",description="Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."),
+        Movie(id=10,title="Sign of the Cross, The",genero="Drama",description="Fusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum."),
+        Movie(id=11,title="Silver Chalice, The",genero="Drama|Romance",description="Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem."),
+        Movie(id=12,title="Profound Desires of the Gods (Kamigami no fukaki yokubo) ",genero="Drama",description="Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui."),
+        Movie(id=13,title="Bloodfist",genero="Action",description="Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus."),
+        Movie(id=14,title="The Last Word",genero="Drama|Romance",description="Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem."),
+        Movie(id=15,title="Sugar Hill",genero="Drama",description="Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque."),
+        Movie(id=16,title="I Want to Look Like That Guy",genero="Documentary",description="Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl."),
+        Movie(id=17,title="Romeo and Juliet",genero="Drama|Romance",description="Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti."),
+        Movie(id=18,title="Beer",genero="Comedy",description="Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo."),
+        Movie(id=19,title="M",genero="Crime|Film-Noir|Thriller",description="Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit."),
+        Movie(id=20,title="Arsenic and Old Lace",genero="Comedy|Mystery|Thriller",description="Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.")
+    )
+}
